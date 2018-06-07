@@ -22,7 +22,7 @@ forecast_location_long = "-0.3454663"
 # "uk" - SI w. windSpeed in mph
 forecast_units = "si"
   
-http = Net::HTTP.new("api.forecast.io") # With Proxy use ("api.forecast.io", 443, proxy_addr, proxy_port)
+http = Net::HTTP.new("api.forecast.io", 443) # With Proxy use ("api.forecast.io", 443, proxy_addr, proxy_port)
 http.use_ssl = true
 http.verify_mode = OpenSSL::SSL::VERIFY_PEER
 response = http.request(Net::HTTP::Get.new("/forecast/#{forecast_api_key}/#{forecast_location_lat},#{forecast_location_long}?units=#{forecast_units}"))
