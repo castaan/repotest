@@ -4,8 +4,8 @@ require 'json'
 
 forecast_api_key = "a158822742ac6f8b7a4aa370d23b456f"
 
-proxy_addr = 'proxy.prod.oami.eu'
-proxy_port = 3128
+#proxy_addr = 'proxy.prod.oami.eu'
+#proxy_port = 3128
 
 #########  PROPOSAL SOLUTION FOR PROXY  ############
 #env_proxy = ENV['https_proxy'] || ENV['HTTPS_PROXY']
